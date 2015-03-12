@@ -1,0 +1,24 @@
+{
+  "name": "oauth-popup",
+  "version": "0.1.0",
+  "description": "Creates and manages and oauth popup",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weo-edu/oauth-popup"
+  },
+  "keywords": [
+    "oauth",
+    "popup",
+    "authentication"
+  ],
+  "author": "ashaffer (http://github.com/ashaffer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weo-edu/oauth-popup/issues"
+  },
+  "homepage": "https://github.com/weo-edu/oauth-popup"
+}
