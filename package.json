@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/weo-edu/oauth-popup/issues"
   },
-  "homepage": "https://github.com/weo-edu/oauth-popup"
+  "homepage": "https://github.com/weo-edu/oauth-popup",
+  "devDependencies": {
+    "zuul": "^2.1.1"
+  }
 }
