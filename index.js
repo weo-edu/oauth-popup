@@ -5,6 +5,7 @@ module.exports = function(config) {
 
   return function(url, done) {
     var wnd = window.open(url, '_blank', features);
+    wnd.focus();
     window.addEventListener('message', function handler(evt) {
       if(evt.origin === window.location.origin) {
         wnd.close();
