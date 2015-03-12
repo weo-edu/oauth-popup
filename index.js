@@ -19,7 +19,7 @@ module.exports = function(config) {
     var interval = setInterval(function() {
       if(wnd.closed) {
         clearTimeout(interval);
-        next(new Error('Authorization failed'));
+        done(new Error('Authorization failed'));
       }
     }, 50);
   };
