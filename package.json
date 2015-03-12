@@ -23,5 +23,8 @@
   "homepage": "https://github.com/weo-edu/oauth-popup",
   "devDependencies": {
     "zuul": "^2.1.1"
+  },
+  "dependencies": {
+    "window-features": "git://github.com/weo-edu/window-features"
   }
 }

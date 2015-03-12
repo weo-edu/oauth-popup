@@ -1,6 +1,10 @@
+var wndFeatures = require('window-features');
+
 module.exports = function(config) {
+  var features = wndFeatures(config);
+
   return function(url, done) {
-    var wnd = window.open(url, '_blank');
+    var wnd = window.open(url, '_blank', features);
     window.addEventListener('message', function handler(evt) {
       if(evt.origin === window.location.origin) {
         wnd.close();
