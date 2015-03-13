@@ -12,6 +12,8 @@ module.exports = function(url, config, done) {
         done(evt.data.error);
       else
         done(null, evt.data);
+
+      clearTimeout(interval);
       window.removeEventListener('message', handler, false);
     }
   }, false);
