@@ -34,8 +34,9 @@ function parseQs(str) {
   }, {}) : {};
 }
 
-var params = parseQs(window.location.search.substring(1));
 try {
+  var params = parseQs(window.location.search.substring(1));
+
   if (window.opener && window.opener.location.origin === window.location.origin) {
     if (params.oauth_token && params.oauth_verifier) {
       window.opener.postMessage({oauth_token: params.oauth_token, oauth_verifier: params.oauth_verifier}, window.location.origin);
