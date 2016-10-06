@@ -5,11 +5,12 @@ module.exports = function (url, config, done) {
   var wnd = window.open(url, '_blank', features)
   wnd.focus()
 
-  window.addEventListener('message', function handler (evt) {
+  function handler (evt) {
     if(evt.origin === window.location.origin) {
       handleData(evt.data)
     }
-  }, false)
+  }
+  window.addEventListener('message', handler, false)
 
   window.__oauthPopupRedirectFn = handleData
 
