@@ -1,6 +1,6 @@
 {
   "name": "oauth-popup",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Creates and manages and oauth popup",
   "main": "index.js",
   "scripts": {
